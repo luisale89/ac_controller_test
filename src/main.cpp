@@ -206,9 +206,9 @@ void setup() {
   pinMode(VENT_RELAY, OUTPUT);
   pinMode(COMP_RELAY, OUTPUT);
   pinMode(NETWORK_LED, OUTPUT);
-  pinMode(Q3_INPUT, INPUT_PULLDOWN);
-  pinMode(Q2_INPUT, INPUT);
-  pinMode(Q1_INPUT, INPUT);
+  pinMode(Q3_INPUT, INPUT_PULLUP);
+  pinMode(Q2_INPUT, INPUT_PULLUP);
+  pinMode(Q1_INPUT, INPUT_PULLUP);
   pinMode(NOW_CNF, INPUT);
 
   logger("setup done.", INFO);
